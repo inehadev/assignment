@@ -45,7 +45,7 @@ const Hero = () => {
     }
 
     const handleEnter = (e) => {
-        if (e.key == 'Enter ') {
+        if (e.key ==='Enter ') {
             handleresposne();
         }
 
@@ -90,12 +90,12 @@ const Hero = () => {
                   </div>
                 <div className='flex  mb-14 w-[50vw]  rounded-full justify-center  w items-center  bg-white'>
                     <div className='flex justify-center items-center ml-5 '>
-                        <Smile size={22} className='  text-gray-700 ' />
+                        <Smile size={22} className='  text-gray-700 ml-4 ' />
                         <input className='  h-12 w-[40vw] justify-center text-lg  ml-2 items-center  text-gray-900 focus:outline-none  placeholder:text-gray-700' type="text " placeholder='write a message' value={text}
                             onChange={(e) => settext(e.target.value)} onKeyDown={handleEnter} />
                     </div>
-                    <div className='flex justify-center bg-gray-900  rounded-full items-center mx-1 py-1 border-gray-900'>
-                        <button className='text-white  h-10 rounded-full  px-4 flex  text-lg text-center ' onClick={handleresposne}>
+                    <div className='flex justify-center bg-gray-900  rounded-full items-center mx-2 mr-6 py-1 border-gray-900'>
+                        <button className='text-white  h-9 rounded-full   px-4 flex  text-lg text-center ' onClick={handleresposne}>
                          
                          {loading ? (
                             <div className='px-1'>
