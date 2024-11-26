@@ -50,7 +50,7 @@ const TextCompletion =  async (req , res)=>{
             }
           });
       
-          console.log("API data of the response:", response.data);
+          console.log("API data of  the rresponse in:", response.data);
           let generatedText = response.data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated.";
     
         
@@ -58,7 +58,7 @@ const TextCompletion =  async (req , res)=>{
           res.status(200).json({completion: generatedText})
     } catch (error) {
         console.log("error in text completion" ,error)
-        res.status(500).json({message:"error in text competion"})
+        res.status(500).json({message:"error in text competio"})
         
     }
 }
