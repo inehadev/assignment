@@ -50,7 +50,7 @@ const TextCompletion =  async (req , res)=>{
             }
           });
       
-          console.log("API data:", response.data);
+          console.log("API data of response:", response.data);
           let generatedText = response.data?.candidates?.[0]?.content?.parts?.[0]?.text || "No response generated.";
     
         
